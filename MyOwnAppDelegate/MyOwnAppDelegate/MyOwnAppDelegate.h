@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyOwnAppDelegate.h
 //  MyOwnAppDelegate
 //
 //  Created by Dmitry Shapkin on 13/03/2019.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController : UIViewController
+@interface MyOwnAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow* window;
 
 @end
 
