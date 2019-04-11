@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyOwnAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MyOwnAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow* window;
 

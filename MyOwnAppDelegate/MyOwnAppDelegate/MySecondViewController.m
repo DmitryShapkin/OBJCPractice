@@ -29,4 +29,10 @@
 }
 */
 
+- (IBAction)myAction:(UIButton *)sender {
+    
+    NSLog(@"Button has been pressed");
+    
+}
+
 @end

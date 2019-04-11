@@ -22,10 +22,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = UIColor.redColor;
     
+    NSLog(@"keyWindow = %i", self.window.keyWindow);
+    NSLog(@"windowLevel = %f", self.window.windowLevel);
+    
     UIViewController* vc = [[MySecondViewController alloc] init];
     
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"keyWindow = %i", self.window.keyWindow);
+    NSLog(@"windowLevel = %f", self.window.windowLevel);
     
     return YES;
 }
