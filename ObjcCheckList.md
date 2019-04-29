@@ -11,11 +11,13 @@
 - использование NSNotificationCenter addObserver без removeObserver
 - retain cycle в блоках
 - добавление nil в коллекции
+
 Второй блок
 - обращение к propety в init, dealloc, getter, setter
 - объявление ivar в интерфейсе
 - отсутствие проверки вызова optional метода делегата
 - обработка ошибок if (![self trySomethingWithError:&error])
+
 Третий блок
 - использование performSelector
 - объявление мутабельных типов без copy атрибута, включая блоки (NSString, ...)
@@ -30,6 +32,7 @@
 - использование updateConstraints, prepareForReuse, viewDidLoad, viewWillAppear, viewDidAppear и т.д без вызова super
 - инициализация NSTimer без реализации selector
 - case fallthrough
+
 Четвертый блок
 - пробелы, переносы {}, опечатки
 - обращение к свойствам через вызов getter, а не через . array.count
